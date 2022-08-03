@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+
+
+
+
+****blocking and non blocking***
+
+blocking::
+if thread doing one task like file read then it will not perform after task till file read compelted
+
+non blocking:
+task 1 : file read(after excution return callback )
+task 2 : Http request (after excution return callback )
+
+till file read complete it will complete 2nd task http request
+
+*************************Callback**********************
+
+
+last parameter of function is
+call in last of function is excution
+1 st parameter is error or null
+
+// example::
+
+
+// function dosomething(callback){
+
+//     const user =  getalluser((err, data) => {
+// if(err) return callback(err)
+// callback(null,data)
+
+
+//     })
+// }
+ 
